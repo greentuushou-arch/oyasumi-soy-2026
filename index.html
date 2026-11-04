@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>枕と眠りのおやすみショップへ応援よろしくお願いします｜ショップ・オブ・ザ・イヤー2026 投票受付中</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ロゴの紺を夜空に、三日月の黄色を差し色に */
+  --navy:#1e3f6b;
+  --night:#142c50;
+  --blue:#3f6db0;
+  --sky:#b9d0f0;
+  --ice:#eef3fb;
+  --paper:#fbf9f3;
+  --moon:#f7d774;
+  --moon-d:#c98f1a;
+  --ink:#1d2f4a;
+  --ink-2:#5a6880;
+  --line:rgba(29,47,74,.12);
+  --sans:"Noto Sans JP",sans-serif;
+  --en:"Jost","Noto Sans JP",sans-serif;
+  --moon-grad:linear-gradient(180deg,#ffe9a6 0%,#f7d774 55%,#eebf4f 100%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--night);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.9;letter-spacing:.04em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:750px;margin:0 auto;background:var(--paper);overflow:hidden;padding-bottom:88px}
+.in{padding:0 22px}
+
+/* ---------- 共通見出し ---------- */
+.head{text-align:center;margin-bottom:40px;position:relative}
+.head>*{position:relative;z-index:1}
+.head[data-bg]::before{content:attr(data-bg);position:absolute;left:50%;top:-30px;z-index:0;transform:translateX(-50%);font-family:var(--en);font-weight:600;font-size:clamp(72px,22vw,146px);line-height:1;letter-spacing:.02em;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(63,109,176,.14);pointer-events:none}
+.dark .head[data-bg]::before{-webkit-text-stroke-color:rgba(185,208,240,.22)}
+.label{display:inline-flex;align-items:center;gap:14px;font-family:var(--en);font-weight:500;font-size:17px;letter-spacing:.3em;color:var(--moon-d)}
+.label::before,.label::after{content:"";width:28px;height:1.5px;background:currentColor}
+.head h2{font-weight:700;font-size:32px;line-height:1.5;letter-spacing:.06em;margin-top:14px}
+.head .lead{margin-top:16px;font-size:18px;color:var(--ink-2)}
+.dark .label{color:var(--moon)}
+.dark .head h2{color:#fff}
+
+/* ---------- 投票ボタン（シャイン） ---------- */
+.vote{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:560px;min-height:78px;margin:0 auto;padding:0 14px;border-radius:999px;background:var(--moon-grad);color:var(--night);font-weight:700;font-size:clamp(17px,5vw,23px);letter-spacing:.04em;white-space:nowrap;box-shadow:0 5px 0 var(--moon-d);overflow:hidden;transition:transform .15s,box-shadow .15s}
+.vote:active{transform:translateY(3px);box-shadow:0 2px 0 var(--moon-d)}
+.vote .arw{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-size:14px;flex:none}
+.vote::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);pointer-events:none}
+.vote.np-shine-play::after{animation:shine 1.6s ease-in-out}
+@keyframes shine{to{left:130%}}
+.vote-note{text-align:center;font-size:17px;color:var(--ink-2);margin-top:14px;line-height:1.7}
+
+/* ---------- FV（月夜） ---------- */
+.fv{position:relative;background:linear-gradient(180deg,#142c50 0%,#1e3f6b 38%,#3f6db0 74%,#7f9fd6 100%);color:#fff;overflow:hidden}
+.moon{position:absolute;right:14px;top:112px;z-index:1;width:clamp(58px,16vw,110px);height:clamp(58px,16vw,110px);border-radius:50%;box-shadow:inset calc(clamp(58px,16vw,110px) * -.26) calc(clamp(58px,16vw,110px) * .08) 0 0 var(--moon);transform:rotate(-16deg);animation:moon 6s ease-in-out infinite}
+@keyframes moon{0%,100%{translate:0 0}50%{translate:0 -8px}}
+.fv-bar{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;border-bottom:1px solid rgba(185,208,240,.3)}
+.fv-bar img{height:78px;width:auto}
+.fv-bar span{font-size:15px;letter-spacing:.12em;color:rgba(255,255,255,.75)}
+.fv-head{position:relative;z-index:4;text-align:center;padding:30px 12px 0}
+.emb{font-family:var(--en);font-weight:500;font-size:clamp(17px,4.8vw,28px);line-height:1.1;letter-spacing:.16em;padding-left:.16em;white-space:nowrap}
+.emb .big{display:block;margin-top:6px;font-weight:600;font-size:clamp(46px,13.6vw,96px);line-height:1.02;letter-spacing:.04em;padding-left:.04em}
+.emb b{display:block;margin-top:6px;font-weight:600;font-size:clamp(62px,19vw,132px);line-height:1;letter-spacing:.04em;color:var(--moon)}
+.fv-title{margin-top:14px;white-space:nowrap;font-weight:700;font-size:clamp(34px,9.6vw,64px);line-height:1.15;letter-spacing:.08em;padding-left:.08em}
+.fv-dl{display:inline-flex;align-items:baseline;gap:8px;margin-top:12px;background:#fff;color:var(--navy);font-size:18px;font-weight:700;padding:6px 24px;border-radius:999px}
+.fv-dl b{font-family:var(--en);font-weight:600;font-size:32px;line-height:1}
+.fv-pts{position:relative;z-index:3;padding:26px 20px 0}
+.fv-pt{background:#fff;color:var(--ink);border-radius:16px;padding:20px 10px 16px;text-align:center;line-height:1.5;letter-spacing:0}
+.fv-pt .l1{white-space:nowrap;font-size:clamp(14px,4.3vw,21px);font-weight:700;letter-spacing:.03em;color:var(--blue)}
+.fv-pt .l2{white-space:nowrap;font-size:clamp(15px,4.4vw,20px);font-weight:500;margin-top:4px}
+.fv-pt .l3{font-weight:700;font-size:clamp(24px,7vw,38px);line-height:1.35;margin-top:6px}
+.fv-pt .l3 .w{display:block;white-space:nowrap}
+.fv-pt .l3 .p{font-family:var(--en);font-weight:600;font-size:1.45em;line-height:1;color:var(--blue);letter-spacing:.01em}
+.fv-pt .l3 .p small{font-family:var(--sans);font-size:.6em}
+.fv-pt .l3 .w b{font-family:var(--en);font-weight:600;font-size:1.15em;color:var(--blue)}
+.fv-pt .nt{white-space:nowrap;font-size:clamp(12px,3.4vw,15px);color:var(--ink-2);margin-top:10px}
+.fv-body{position:relative;z-index:3;padding:0 20px 86px}
+.fv-lead{margin-top:30px;text-align:center;white-space:nowrap;font-weight:700;font-size:clamp(15px,4.3vw,26px);letter-spacing:.02em;line-height:1.5}
+.fv-copy{text-align:center;margin-top:8px;font-weight:700;font-size:clamp(25px,7.2vw,42px);line-height:1.5;letter-spacing:.04em}
+.fv-copy em{font-style:normal;color:var(--moon)}
+.fv-cta{margin-top:30px}
+.fv-cta .vote-note{color:rgba(255,255,255,.9)}
+/* 下の雲 */
+.cloud{position:absolute;left:0;right:0;bottom:-1px;z-index:2;height:60px;background:radial-gradient(circle at 12% 110%,var(--paper) 46px,transparent 47px),radial-gradient(circle at 34% 130%,var(--paper) 62px,transparent 63px),radial-gradient(circle at 58% 120%,var(--paper) 54px,transparent 55px),radial-gradient(circle at 80% 135%,var(--paper) 66px,transparent 67px),radial-gradient(circle at 98% 110%,var(--paper) 44px,transparent 45px)}
+/* 星のまたたき */
+.spark{position:absolute;inset:0;z-index:1;pointer-events:none}
+.spark i{position:absolute;width:var(--s);height:var(--s);background:#fff;clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);opacity:0;animation:twinkle ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.4)}50%{opacity:1;transform:scale(1)}}
+
+/* ---------- 投票アニメ：まくらのようにふっくらした投票箱に、手紙がふわっと入る ---------- */
+.stage{position:relative;z-index:3;height:350px;margin-top:6px}
+.gbox{position:absolute;left:50%;bottom:16px;width:260px;height:230px;margin-left:-130px;overflow:visible;transform-origin:50% 100%;animation:gbump 5s ease-in-out infinite}
+@keyframes gbump{0%,52%,100%{transform:scale(1)}56%{transform:scale(1.05,.93)}62%{transform:scale(.98,1.03)}70%{transform:scale(1)}}
+/* 投入口の中心（SVG上 x84・y61）より下の封筒は見えないように切り抜く */
+.slotwin{position:absolute;left:calc(50% - 46px - 45px);bottom:185px;width:90px;height:150px;overflow:hidden;z-index:4}
+.env{position:absolute;left:50%;bottom:0;width:58px;height:40px;margin-left:-29px;animation:env 5s ease-in-out infinite}
+.env svg{width:100%;height:100%;display:block;overflow:visible}
+@keyframes env{
+  0%{transform:translateY(-70px) rotate(-14deg);opacity:0}
+  10%{opacity:1}
+  20%{transform:translateY(-44px) rotate(8deg)}
+  32%,40%{transform:translateY(-26px) rotate(0)}
+  52%,100%{transform:translateY(48px) rotate(0);opacity:1}
+}
+.burst{position:absolute;left:calc(50% - 46px);bottom:185px;z-index:5;width:0;height:0}
+.burst i{position:absolute;left:0;top:0;width:var(--sz,20px);height:var(--sz,20px);margin:calc(var(--sz,20px) / -2) 0 0 calc(var(--sz,20px) / -2);background:var(--img) center/contain no-repeat;opacity:0;animation:burst 5s linear infinite}
+@keyframes burst{0%,52%{opacity:0;transform:translate(0,0) scale(.3) rotate(0);animation-timing-function:cubic-bezier(.08,.8,.25,1)}54%{opacity:1}84%{opacity:1;animation-timing-function:linear}100%{opacity:0;transform:translate(var(--bx),var(--by)) scale(1) rotate(var(--br))}}
+/* 投票箱のとなりの羊（入った瞬間にぴょんと跳ねる） */
+.sheep{display:block;overflow:visible}
+.st-sheep{position:absolute;left:max(4px,calc(50% - 236px));bottom:20px;width:78px;height:66px;z-index:5;transform-origin:50% 100%;animation:hop 5s ease-in-out infinite}
+@keyframes hop{0%,52%,76%,100%{transform:translateY(0) scale(1)}56%{transform:translateY(0) scale(1.08,.9)}62%{transform:translateY(-26px) scale(.97,1.05)}69%{transform:translateY(0) scale(1.05,.94)}}
+
+/* ---------- 投票スタート ---------- */
+.start{padding:40px 18px 52px;text-align:center}
+.start h2{font-weight:700;font-size:clamp(22px,6.4vw,32px);line-height:1.65;letter-spacing:.04em;margin-top:18px}
+.start h2 b{color:var(--blue);font-weight:700}
+.period{display:inline-block;margin-top:24px;border-top:1.5px solid var(--sky);border-bottom:1.5px solid var(--sky);padding:12px 6px;line-height:1.7}
+.period dt{font-family:var(--en);font-weight:500;font-size:16px;color:var(--blue);letter-spacing:.3em}
+.period dd{white-space:nowrap;font-size:clamp(14px,4.2vw,19px);font-weight:700;letter-spacing:0}
+
+/* ---------- お手紙 ---------- */
+.letter-sec{padding:0 14px 66px}
+.letter{position:relative;background:#fff;border-radius:14px;padding:0 22px 40px;overflow:hidden;border:1px solid var(--line)}
+.letter-top{position:relative;margin:0 -22px 34px;background:linear-gradient(180deg,var(--night),var(--navy));color:#fff;text-align:center;padding:26px 16px 24px}
+.letter-top .en{display:block;font-family:var(--en);font-weight:500;font-size:30px;letter-spacing:.3em;line-height:1.2;padding-left:.3em}
+.letter-top small{display:block;font-size:16px;letter-spacing:.14em;color:rgba(255,255,255,.85);margin-top:6px}
+.letter p{font-size:18px;font-weight:500;line-height:2.05}
+.letter p+p{margin-top:1.1em}
+.letter .to{font-size:19px;font-weight:700;color:var(--navy)}
+.letter mark{background:linear-gradient(transparent 62%,rgba(247,215,116,.6) 62%);color:inherit}
+.letter .theme{margin:1.4em 0;padding:16px 8px;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-weight:700;font-size:21px;line-height:1.7;color:var(--navy)}
+.letter .sign{margin-top:1.6em;text-align:right}
+.letter .sign small{display:block;font-size:16px;color:var(--ink-2)}
+
+/* ---------- ありがとうございます ---------- */
+.nums{background:linear-gradient(180deg,var(--night),var(--navy));color:#fff;padding:72px 0 66px}
+.nums .msg{margin:-6px 0 34px;text-align:center;font-weight:700;font-size:22px;line-height:1.9;letter-spacing:.06em}
+.num-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.num{border:1.5px solid rgba(185,208,240,.45);border-radius:16px;padding:28px 6px 22px;text-align:center;line-height:1.4}
+.num .v{display:block;white-space:nowrap;font-family:var(--en);font-weight:500;font-size:clamp(40px,12.4vw,70px);line-height:1.05;color:var(--moon)}
+.num .v small{font-family:var(--sans);font-size:.36em;font-weight:700;color:#fff}
+.num .l{display:block;margin-top:12px;font-size:17px;font-weight:700}
+.num .s{display:block;margin-top:4px;font-family:var(--en);font-size:14px;letter-spacing:.14em;color:rgba(255,255,255,.6)}
+.nums .nt{margin-top:16px;text-align:center;font-size:15px;color:rgba(255,255,255,.7)}
+
+/* ---------- 大切にしていること ---------- */
+.good{padding:72px 0 64px}
+.pts{display:grid;gap:18px}
+.pt{display:grid;grid-template-columns:62px 1fr;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.pt .no{display:flex;align-items:center;justify-content:center;background:var(--navy);color:var(--moon);font-family:var(--en);font-weight:500;font-size:24px;letter-spacing:.04em}
+.pt .tx{padding:20px 20px 24px}
+.pt .tx .en{display:block;font-family:var(--en);font-weight:500;font-size:16px;letter-spacing:.2em;color:var(--moon-d)}
+.pt h3{font-weight:700;font-size:21px;line-height:1.5;margin-top:4px}
+.pt p{font-size:17px;color:var(--ink-2);line-height:1.8;margin-top:8px}
+
+/* ---------- 投票方法 ---------- */
+.how{padding:72px 0 62px}
+.steps{display:grid;gap:12px}
+.steps li{list-style:none;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start;background:#fff;padding:20px;border-left:4px solid var(--moon);border-radius:4px}
+.steps .sn{font-family:var(--en);font-weight:500;font-size:15px;letter-spacing:.2em;color:var(--moon-d);text-align:center;line-height:1}
+.steps .sn b{display:block;font-weight:400;font-size:44px;color:var(--ink);letter-spacing:0;margin-top:4px}
+.steps h3{font-size:19px;font-weight:700;line-height:1.5}
+.steps p{font-size:17px;color:var(--ink-2);line-height:1.7;margin-top:2px}
+
+/* ---------- 声 ---------- */
+.voice{background:var(--ice);padding:72px 0 64px}
+.bubbles{display:grid;gap:14px}
+.bb{position:relative;background:#fff;border-radius:24px;padding:16px 22px;font-weight:500;font-size:18px;line-height:1.7}
+.bb::after{content:"";position:absolute;bottom:-10px;width:18px;height:14px;background:#fff;clip-path:polygon(0 0,100% 0,30% 100%)}
+.bb:nth-child(odd){margin-right:18px}
+.bb:nth-child(odd)::after{left:36px}
+.bb:nth-child(even){margin-left:18px}
+.bb:nth-child(even)::after{right:36px;transform:scaleX(-1)}
+.voice .after{text-align:center;margin-top:34px;font-size:18px;line-height:2}
+
+/* ---------- 締め ---------- */
+.last{position:relative;background:linear-gradient(180deg,#7f9fd6 0%,#3f6db0 26%,#1e3f6b 62%,#142c50 100%);color:#fff;padding:96px 22px 66px;text-align:center;overflow:hidden}
+.cloud.top{top:-1px;bottom:auto;transform:scaleY(-1)}
+.last .big{position:relative;z-index:3;font-family:var(--en);font-weight:600;font-size:clamp(50px,14.6vw,100px);line-height:.95;letter-spacing:.02em;color:var(--moon)}
+.last h2{position:relative;z-index:3;font-weight:700;font-size:clamp(25px,7vw,34px);line-height:1.6;letter-spacing:.06em;margin:24px 0 32px}
+.last h2 em{font-style:normal;color:var(--moon)}
+.last .vote,.last .vote-note{position:relative;z-index:3}
+.last .vote-note{color:rgba(255,255,255,.9)}
+
+/* ---------- 商品 ---------- */
+.items{background:#fff;padding:60px 0 64px}
+.sheepbox{display:flex;justify-content:center;margin:0 0 18px}
+.sheepbox .sheep{width:170px;height:170px;border-radius:50%;background:radial-gradient(circle at 50% 30%,#3f6db0,#1e3f6b 70%);animation:sway 4s ease-in-out infinite;transform-origin:50% 100%}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.zzz{animation:zzz 3s ease-in-out infinite}
+.zzz:nth-of-type(2){animation-delay:.6s}
+.zzz:nth-of-type(3){animation-delay:1.2s}
+@keyframes zzz{0%,100%{opacity:0;transform:translateY(6px)}40%,70%{opacity:1;transform:translateY(0)}}
+.sub-head{text-align:center;margin:0 0 24px}
+.sub-head .en{display:block;font-family:var(--en);font-weight:500;font-size:16px;letter-spacing:.3em;color:var(--moon-d)}
+.sub-head b{display:block;font-weight:700;font-size:23px;letter-spacing:.06em;margin-top:2px}
+.sub-head.mt{margin-top:60px}
+.premium{display:grid;gap:18px}
+.pm{display:block;background:var(--navy);color:#fff;border-radius:10px;overflow:hidden}
+.pm .ph{display:block;aspect-ratio:1/1;overflow:hidden;background:#fff}
+.pm .ph img{width:100%;height:100%;object-fit:contain;transition:transform .6s}
+.pm:hover .ph img{transform:scale(1.04)}
+.pm .tx{padding:18px 20px 22px}
+.pm h4{font-size:19px;font-weight:700;line-height:1.6}
+.pm .price{font-family:var(--en);font-weight:500;font-size:24px;color:var(--moon);margin-top:6px}
+.pm .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:rgba(255,255,255,.85)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 14px}
+.it .ph{display:block;aspect-ratio:1/1;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:10px}
+.it .ph img{width:100%;height:100%;object-fit:contain}
+.it h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:10px}
+.it .price{font-family:var(--en);font-weight:500;font-size:20px;color:var(--blue);margin-top:2px}
+.it .price small{font-family:var(--sans);font-size:15px;font-weight:500;color:var(--ink-2)}
+.price-nt{margin-top:14px;font-size:14px;color:var(--ink-2);text-align:right}
+.topics{display:grid;grid-template-columns:1fr 1fr;gap:24px 14px}
+.tp{display:block}
+.tp .ph{display:block;aspect-ratio:16/9;overflow:hidden;border-radius:8px;background:var(--line)}
+.tp .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.tp:hover .ph img{transform:scale(1.04)}
+.tp h4{font-size:16px;font-weight:700;line-height:1.55;margin-top:10px}
+.tp h4::after{content:" →";font-family:var(--en);color:var(--moon-d)}
+.links{margin-top:46px;display:grid;gap:14px}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px;padding:0 26px;background:var(--navy);color:#fff;border-radius:999px;font-weight:700;font-size:18px;letter-spacing:.06em;transition:background .25s}
+.btn::after{content:"→";font-family:var(--en);color:var(--moon)}
+.btn:hover{background:var(--blue)}
+
+/* ---------- 追従ボタン ---------- */
+.fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(20,44,80,.95);transform:translateY(110%);transition:transform .35s}
+.fixed.on{transform:none}
+.fixed .vote{min-height:58px;box-shadow:0 3px 0 var(--moon-d)}
+
+@media (min-width:768px){
+  .in{padding:0 56px}
+  .fv-bar{padding:18px 36px}
+  .fv-bar img{height:84px}
+  .moon{top:120px;right:44px}
+  .fv-head{padding-top:44px}
+  .fv-dl{font-size:22px;padding:8px 32px}
+  .fv-dl b{font-size:40px}
+  .fv-pts{padding:30px 56px 0}
+  .fv-body{padding:0 56px 100px}
+  .st-sheep{width:96px;height:81px}
+  .head h2{font-size:38px}
+  .letter-sec{padding:0 56px 72px}
+  .letter{padding:0 52px 52px}
+  .letter-top{margin:0 -52px 42px}
+  .letter p{font-size:19px}
+  .bb{font-size:19px}
+  .bb:nth-child(odd){margin-right:140px}
+  .bb:nth-child(even){margin-left:140px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .steps li{grid-template-columns:1fr;text-align:center;padding:28px 16px;border-left:0;border-top:4px solid var(--moon)}
+  .premium{grid-template-columns:repeat(3,1fr)}
+  .pm h4{font-size:17px}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .fixed{display:none}
+  .wrap{padding-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .vote.np-shine-play::after,.spark i,.moon,.gbox,.env,.st-sheep,.sheepbox .sheep,.zzz{animation:none}
+  .spark,.burst{display:none}
+}
+</style>
+</head>
+<body>
+<!-- 羊の絵（投票箱のとなりと、おすすめの上で共通） -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="sheep" viewBox="0 0 120 100">
+    <g fill="#1d2f4a"><rect x="34" y="72" width="8" height="22" rx="4"/><rect x="50" y="74" width="8" height="20" rx="4"/><rect x="68" y="74" width="8" height="20" rx="4"/><rect x="84" y="72" width="8" height="22" rx="4"/></g>
+    <g fill="#ffffff"><circle cx="40" cy="46" r="20"/><circle cx="62" cy="36" r="22"/><circle cx="86" cy="46" r="20"/><circle cx="46" cy="64" r="18"/><circle cx="70" cy="66" r="19"/><circle cx="92" cy="60" r="14"/></g>
+    <g fill="#1d2f4a"><ellipse cx="26" cy="50" rx="17" ry="19"/><ellipse cx="9" cy="42" rx="9" ry="5" transform="rotate(-24 9 42)"/></g>
+    <circle cx="27" cy="33" r="11" fill="#ffffff"/>
+    <path d="M15 50q4 4 8 0M29 50q4 4 8 0" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M22 60q4 3 8 0" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+<div class="wrap">
+
+  <!-- ===== FV ===== -->
+  <header class="fv" id="fv">
+    <div class="spark" data-spark="26"></div>
+    <div class="moon" aria-hidden="true"></div>
+    <div class="fv-bar"><a href="https://www.rakuten.co.jp/oyasumi/" target="_blank" rel="noopener"><img src="images/logo-white.png" alt="枕と眠りのおやすみショップ！"></a><span>楽天市場店</span></div>
+    <div class="fv-head">
+      <p class="emb">RAKUTEN<span class="big">SHOP OF<br>THE YEAR</span><b>2026</b></p>
+      <h1 class="fv-title">投票受付中</h1>
+      <p class="fv-dl">投票は<b>11.30</b>(月)09:59まで</p>
+    </div>
+    <div class="fv-pts">
+      <div class="fv-pt">
+        <p class="l1">あなたの1票でベストショップが決まる！</p>
+        <p class="l2">お気に入りのショップに投票すると</p>
+        <p class="l3"><span class="w">最大<span class="p">10,000<small>ポイント</small></span>！</span><span class="w">合計<b>10</b>万名様に当たる！</span></p>
+        <p class="nt">※詳細は楽天市場の投票ページをご確認ください</p>
+      </div>
+    </div>
+    <div class="stage" aria-hidden="true">
+      <div class="burst" data-burst="14"></div>
+      <div class="slotwin"><div class="env"><svg viewBox="0 0 58 40"><rect x="1" y="1" width="56" height="38" rx="4" fill="#ffffff" stroke="#c9d6ea" stroke-width="1.5"/><path d="M2 3 L29 23 L56 3" fill="none" stroke="#c9d6ea" stroke-width="1.5"/><circle cx="29" cy="23" r="8" fill="#1e3f6b"/><path d="M31.5 17.5a6 6 0 1 0 2.8 9.6 5 5 0 0 1-2.8-9.6z" fill="#f7d774"/></svg></div></div>
+      <svg class="gbox" viewBox="0 0 260 230">
+        <defs>
+          <linearGradient id="gFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e3ebf7"/></linearGradient>
+          <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef3fb"/></linearGradient>
+          <linearGradient id="gSide" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c3d2e8"/><stop offset="1" stop-color="#a5b9d8"/></linearGradient>
+        </defs>
+        <ellipse cx="128" cy="222" rx="118" ry="7" fill="rgba(20,44,80,.35)"/>
+        <!-- 右側面（角を丸めて、まくらのようにふっくら） -->
+        <path d="M184 76 Q206 58 222 52 Q230 49 230 60 L230 178 Q230 190 220 196 Q202 206 186 212 Z" fill="url(#gSide)"/>
+        <!-- 正面 -->
+        <rect x="22" y="68" width="166" height="148" rx="22" fill="url(#gFront)"/>
+        <rect x="30" y="76" width="150" height="132" rx="16" fill="none" stroke="#b9d0f0" stroke-width="1.6" stroke-dasharray="5 5"/>
+        <!-- 三日月のマーク -->
+        <circle cx="104" cy="120" r="26" fill="#1e3f6b"/>
+        <path d="M112 102a19 19 0 1 0 9 31 16 16 0 0 1-9-31z" fill="#f7d774"/>
+        <text x="104" y="170" text-anchor="middle" font-family="Jost,sans-serif" font-weight="600" font-size="24" letter-spacing="4" fill="#1e3f6b">VOTE</text>
+        <text x="104" y="190" text-anchor="middle" font-family="Jost,sans-serif" font-weight="500" font-size="9.5" letter-spacing="1.6" fill="#3f6db0">SHOP OF THE YEAR 2026</text>
+        <!-- 天面と投入口 -->
+        <path d="M38 70 Q28 70 34 62 L60 48 Q66 44 74 44 L214 44 Q226 44 218 52 L192 68 Q188 70 182 70 Z" fill="url(#gTop)"/>
+        <polygon points="48,64 112,64 120,58 56,58" fill="#142c50" stroke="#142c50" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <svg class="sheep st-sheep"><use href="#sheep"/></svg>
+    </div>
+    <div class="fv-body">
+      <p class="fv-lead">いつもご利用いただきありがとうございます</p>
+      <p class="fv-copy"><em>枕と眠りの<br>おやすみショップ</em>に<br>あなたの一票を</p>
+      <div class="fv-cta">
+        <a class="vote" data-vote href="#">おやすみショップに投票する<span class="arw">▶</span></a>
+        <p class="vote-note">楽天市場の投票ページが開きます</p>
+      </div>
+    </div>
+    <div class="cloud" aria-hidden="true"></div>
+  </header>
+
+  <!-- ===== 投票スタート ===== -->
+  <section class="start">
+    <span class="label">VOTING NOW</span>
+    <h2>楽天市場<br><b>ショップ・オブ・ザ・イヤー<br>2026</b> の投票が始まりました</h2>
+    <dl class="period"><dt>VOTING PERIOD</dt><dd>2026年11月1日(日)〜11月30日(月)09:59まで</dd></dl>
+  </section>
+
+  <!-- ===== お手紙 ===== -->
+  <section class="letter-sec">
+    <div class="letter">
+      <div class="letter-top"><span class="en">MESSAGE</span><small>お客様へのお手紙</small></div>
+      <p class="to">お客様へ</p>
+      <p>星の数ほどある楽天ショップの中から、枕と眠りのおやすみショップを見つけていただき、いつもありがとうございます。</p>
+      <p>当店は、まくら株式会社が運営する<mark>枕に特化した枕専門店</mark>です。枕をはじめ、抱き枕、足枕、背中枕のほか、皆様の眠りをもっともっと良くできるような寝具や睡眠グッズをそろえています。</p>
+      <p class="theme">今夜も、あなたに<br>ぴったりの枕を</p>
+      <p>「こんな枕がほしい」「こんな特集が見たい」など、ぜひ皆さまの声をお聞かせください。いただいたメッセージは、スタッフ一同の大きな励みになります。</p>
+      <p>枕と眠りのおやすみショップに、あなたの一票をお寄せいただけますと幸いです。</p>
+      <p class="sign"><small>2026年11月</small>枕と眠りのおやすみショップ スタッフ一同</p>
+    </div>
+  </section>
+
+  <!-- ===== ありがとうございます ===== -->
+  <section class="nums dark">
+    <div class="in">
+      <div class="head" data-bg="THANKS">
+        <span class="label">THANK YOU</span>
+        <h2>ありがとうございます</h2>
+      </div>
+      <p class="msg">たくさんの「ありがとう」に<br>支えられています</p>
+      <div class="num-grid">
+        <p class="num"><span class="v">4.8</span><span class="l">ショップ評価</span><span class="s">RATING</span></p>
+        <p class="num"><span class="v">36,492<small>件</small></span><span class="l">いただいたレビュー</span><span class="s">REVIEWS</span></p>
+      </div>
+      <p class="nt">※ショップ評価・レビュー件数は<br>2026年11月4日時点</p>
+    </div>
+  </section>
+
+  <!-- ===== 大切にしていること ===== -->
+  <section class="good">
+    <div class="in">
+      <div class="head" data-bg="SLEEP">
+        <span class="label">OUR SHOP</span>
+        <h2>おやすみショップが<br>大切にしていること</h2>
+        <p class="lead">毎晩つかうものだから<br>選ぶときも、選んだあとも</p>
+      </div>
+      <div class="pts">
+        <article class="pt">
+          <span class="no">01</span>
+          <div class="tx"><span class="en">SPECIALTY</span><h3>枕に特化した専門店</h3><p>まくら株式会社が枕の企画・製造から手がけ、抱き枕、足枕、背中枕まで、眠りをもっと良くする寝具や睡眠グッズをそろえています。</p></div>
+        </article>
+        <article class="pt">
+          <span class="no">02</span>
+          <div class="tx"><span class="en">TRIAL</span><h3>20日間寝ごこち安心保証</h3><p>枕が合わないときは、開封・使用後でもお届け日から20日間、返品または別の枕への交換をお受けしています。</p></div>
+        </article>
+        <article class="pt">
+          <span class="no">03</span>
+          <div class="tx"><span class="en">KING SERIES</span><h3>人気の王様シリーズ</h3><p>100万人以上の安眠を支え続けてきた日本製の「王様の夢枕」をはじめ、ご家族みんなで選べます。</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 投票方法 ===== -->
+  <section class="how">
+    <div class="in">
+      <div class="head" data-bg="VOTE">
+        <span class="label">HOW TO VOTE</span>
+        <h2>投票はかんたん<br>3ステップ</h2>
+      </div>
+      <ol class="steps">
+        <li><span class="sn">STEP<b>1</b></span><div><h3>投票ボタンをタップ</h3><p>このページの投票ボタンから、楽天市場の投票ページへ</p></div></li>
+        <li><span class="sn">STEP<b>2</b></span><div><h3>楽天会員でログイン</h3><p>お持ちの楽天会員IDでログインしてください</p></div></li>
+        <li><span class="sn">STEP<b>3</b></span><div><h3>投票＆応援メッセージ</h3><p>おやすみショップに一票と、ひとことメッセージを</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ===== お声 ===== -->
+  <section class="voice">
+    <div class="in">
+      <div class="head" data-bg="VOICE">
+        <span class="label">YOUR VOICE</span>
+        <h2>皆さまのお声を<br>お聞かせください</h2>
+        <p class="lead">投票ページの応援メッセージ欄に<br>ひとことお寄せいただけるとうれしいです</p>
+      </div>
+      <div class="bubbles">
+        <p class="bb">枕選びの相談にのってもらえて安心</p>
+        <p class="bb">プレゼントに選んだら喜ばれました</p>
+        <p class="bb">こんな枕を、また作ってほしい</p>
+        <p class="bb">これからも応援しています</p>
+      </div>
+      <p class="after">いただいたご意見や温かいメッセージは<br>スタッフ一同の大きな励みになります</p>
+    </div>
+  </section>
+
+  <!-- ===== 締め ===== -->
+  <section class="last" id="last">
+    <div class="cloud top" aria-hidden="true"></div>
+    <div class="spark" data-spark="14"></div>
+    <p class="big" aria-hidden="true">THANK YOU</p>
+    <h2><em>枕と眠りの<br>おやすみショップ</em>に<br>あなたの一票を</h2>
+    <a class="vote" data-vote href="#">おやすみショップに投票する<span class="arw">▶</span></a>
+    <p class="vote-note">投票は11月30日（月）09:59まで<br>投票すると最大10,000ポイント！<br>合計10万名様に当たる！</p>
+  </section>
+
+  <!-- ===== 商品 ===== -->
+  <section class="items">
+    <div class="in">
+      <div class="sheepbox" aria-hidden="true">
+        <svg class="sheep" viewBox="-10 -24 170 170"><use href="#sheep" x="6" y="30" width="120" height="100"/><text class="zzz" x="104" y="44" font-family="Jost,sans-serif" font-weight="600" font-size="16" fill="#f7d774">z</text><text class="zzz" x="118" y="30" font-family="Jost,sans-serif" font-weight="600" font-size="21" fill="#f7d774">z</text><text class="zzz" x="134" y="16" font-family="Jost,sans-serif" font-weight="600" font-size="26" fill="#f7d774">z</text></svg>
+      </div>
+      <div class="head" data-bg="PICK UP">
+        <span class="label">PICK UP</span>
+        <h2>おやすみショップの<br>おすすめ</h2>
+        <p class="lead">はじめての方にも、ぜひ一度<br>試していただきたい枕です</p>
+      </div>
+
+      <h3 class="sub-head"><span class="en">STAFF PICK</span><b>スタッフおすすめ</b></h3>
+      <div class="premium">
+        <a class="pm" href="https://item.rakuten.co.jp/oyasumi/s-500410/" target="_blank" rel="noopener"><span class="ph"><img src="images/s-500410.jpg" alt="王様の夢枕2" loading="lazy"></span><div class="tx"><h4>王様の夢枕2</h4><p class="price">8,800<small>円</small></p></div></a>
+        <a class="pm" href="https://item.rakuten.co.jp/oyasumi/s-500406/" target="_blank" rel="noopener"><span class="ph"><img src="images/s-500406.jpg" alt="王様の抱き枕" loading="lazy"></span><div class="tx"><h4>王様の抱き枕</h4><p class="price">9,900<small>円</small></p></div></a>
+        <a class="pm" href="https://item.rakuten.co.jp/oyasumi/104-600512-20/" target="_blank" rel="noopener"><span class="ph"><img src="images/104-600512-20.jpg" alt="肩から眠る夢枕" loading="lazy"></span><div class="tx"><h4>肩から眠る夢枕</h4><p class="price">8,800<small>円</small></p></div></a>
+      </div>
+
+      <h3 class="sub-head mt"><span class="en">POPULAR ITEMS</span><b>人気のアイテム</b></h3>
+      <div class="grid">
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/104-000173-12/" target="_blank" rel="noopener"><span class="ph"><img src="images/104-000173-12.jpg" alt="王様のふくらはぎ枕" loading="lazy"></span><h4>王様のふくらはぎ枕</h4><p class="price">7,980<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/500141/" target="_blank" rel="noopener"><span class="ph"><img src="images/500141.jpg" alt="王様の足枕" loading="lazy"></span><h4>王様の足枕</h4><p class="price">2,980<small>円〜</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/104-000170-12/" target="_blank" rel="noopener"><span class="ph"><img src="images/104-000170-12.jpg" alt="王様の背中枕" loading="lazy"></span><h4>王様の背中枕</h4><p class="price">3,480<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/104-000012-20/" target="_blank" rel="noopener"><span class="ph"><img src="images/104-000012-20.jpg" alt="ママの夢枕" loading="lazy"></span><h4>ママの夢枕</h4><p class="price">7,700<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/346-000050-10/" target="_blank" rel="noopener"><span class="ph"><img src="images/346-000050-10.jpg" alt="枕を使わない人の枕 くるくる" loading="lazy"></span><h4>枕を使わない人の枕 くるくる</h4><p class="price">6,980<small>円</small></p></a>
+        <a class="it" href="https://item.rakuten.co.jp/oyasumi/188-001065-20/" target="_blank" rel="noopener"><span class="ph"><img src="images/188-001065-20.jpg" alt="ふんわり軽いあったか着る毛布" loading="lazy"></span><h4>ふんわり軽いあったか着る毛布</h4><p class="price">4,400<small>円</small></p></a>
+      </div>
+      <p class="price-nt">※価格は2026年11月4日時点</p>
+
+      <h3 class="sub-head mt"><span class="en">TOPICS</span><b>特集・読みもの</b></h3>
+      <div class="topics">
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/makura/present/christmas/child/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/xmas.jpg" alt="子供に贈るクリスマスプレゼント" loading="lazy"></span><h4>子供に贈るクリスマスプレゼント</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/fuyushingu/attaka/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/attaka.jpg" alt="ぽかぽかあったか 秋冬の寝具特集" loading="lazy"></span><h4>ぽかぽかあったか 秋冬の寝具特集</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/denki-moufu/heatcracker/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/heatcracker.jpg" alt="電気毛布 HEAT CRACKER" loading="lazy"></span><h4>電気毛布 HEAT CRACKER</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/makura/hoshou/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/hoshou.jpg" alt="枕と抱き枕の20日間寝ごこち安心保証" loading="lazy"></span><h4>枕と抱き枕の20日間寝ごこち安心保証</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/geltron/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/geltron.jpg" alt="GELTRON ジェルトロン" loading="lazy"></span><h4>GELTRON ジェルトロン</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/mogu/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/mogu.jpg" alt="MOGU シリーズ" loading="lazy"></span><h4>MOGU シリーズの紹介</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/kurukuru/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/kurukuru.jpg" alt="枕を使わない人の枕 くるくる" loading="lazy"></span><h4>枕を使わない人の枕 くるくる</h4></a>
+        <a class="tp" href="https://www.rakuten.co.jp/oyasumi/contents/hajimetehukurahagi/" target="_blank" rel="noopener"><span class="ph"><img src="images/topics/fukurahagi.jpg" alt="はじめてのふくらはぎ枕" loading="lazy"></span><h4>はじめてのふくらはぎ枕</h4></a>
+      </div>
+
+      <div class="links">
+        <a class="btn" href="https://www.rakuten.co.jp/oyasumi/contents/topicslist/" target="_blank" rel="noopener">トピックスをすべて見る</a>
+        <a class="btn" href="https://www.rakuten.co.jp/oyasumi/" target="_blank" rel="noopener">おやすみショップ トップへ</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- スマホ追従ボタン -->
+<div class="fixed" id="fixed"><a class="vote" data-vote href="#">おやすみショップに投票する<span class="arw">▶</span></a></div>
+
+<script>
+(function(){
+  // ▼投票ページURL（ここだけ変えれば全ボタンに反映。s= は楽天のショップID 209366）
+  var VOTE_URL = 'https://award.rakuten.co.jp/?menu=shop&aid=101&l-id=SOY_fromshop&s=209366';
+  document.querySelectorAll('[data-vote]').forEach(function(a){
+    a.href = VOTE_URL;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  });
+
+  // 投票ボタンのシャイン（ランダム間隔）
+  function shine(){
+    document.querySelectorAll('.vote').forEach(function(b){
+      b.classList.remove('np-shine-play');
+      void b.offsetWidth;
+      b.classList.add('np-shine-play');
+    });
+    setTimeout(shine, 2800 + Math.random() * 3400);
+  }
+  setTimeout(shine, 1200);
+
+  // 星のまたたき（位置・周期をばらす）
+  document.querySelectorAll('[data-spark]').forEach(function(box){
+    for (var i = 0; i < +box.dataset.spark; i++) {
+      var s = document.createElement('i');
+      s.style.cssText = 'left:' + (Math.random() * 100) + '%;top:' + (Math.random() * 100) + '%;--s:' + (8 + Math.random() * 12) + 'px;animation-duration:' + (2.4 + Math.random() * 3) + 's;animation-delay:' + (-Math.random() * 5) + 's';
+      box.appendChild(s);
+    }
+  });
+
+  // 封筒が入った瞬間にふわっと広がる、星と三日月
+  function svg(body){ return 'url("data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">' + body + '</svg>') + '")'; }
+  var STAR_Y = svg('<path d="M12 1.5l2.6 7.9 8.4.1-6.8 5 2.6 8-6.8-4.9-6.8 4.9 2.6-8L.8 9.5l8.4-.1z" fill="#f7d774"/>');
+  var STAR_W = svg('<path d="M12 1.5l2.6 7.9 8.4.1-6.8 5 2.6 8-6.8-4.9-6.8 4.9 2.6-8L.8 9.5l8.4-.1z" fill="#ffffff"/>');
+  var MOON = svg('<path d="M15 2a10.5 10.5 0 1 0 7 17 9 9 0 0 1-7-17z" fill="#f7d774"/>');
+  var PARTS = [STAR_Y, STAR_W, MOON, STAR_W];
+  document.querySelectorAll('[data-burst]').forEach(function(box){
+    var n = +box.dataset.burst;
+    for (var i = 0; i < n; i++) {
+      var b = document.createElement('i'), ang = -Math.PI * (0.04 + 0.92 * (i + Math.random() * 0.5) / n), r = 130 + Math.random() * 70;
+      b.style.cssText = '--img:' + PARTS[i % PARTS.length] + ';--sz:' + (16 + Math.random() * 14) + 'px;--bx:' + (Math.cos(ang) * r * 1.1) + 'px;--by:' + (Math.sin(ang) * r * 0.75) + 'px;--br:' + (Math.random() * 120 - 60) + 'deg';
+      box.appendChild(b);
+    }
+  });
+
+  // FVを過ぎたら追従ボタン表示（締めの投票ボタンが見えている間は隠す）
+  var fixed = document.getElementById('fixed'), shown = {};
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ shown[e.target.id] = e.isIntersecting; });
+    fixed.classList.toggle('on', !shown.fv && !shown.last);
+  });
+  io.observe(document.getElementById('fv'));
+  io.observe(document.getElementById('last'));
+})();
+</script>
+</body>
+</html>
